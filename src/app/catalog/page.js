@@ -1,10 +1,12 @@
 // pages/about.js
+import CatalogComponent from '@/components/catalog.component';
 import React from 'react';
 
 function Catalog() {
+    
   return (
     <div>
-      <h1>Catolog</h1>
+      <CatalogComponent/>
     </div>
   );
 }
