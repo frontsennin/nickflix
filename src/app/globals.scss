@@ -1,8 +1,21 @@
+@import '../../styles/_mixins.scss';
+
 html,
 body {
   max-width: 100vw;
-  max-height: 100vw;
-  overflow-x: hidden;
+  max-height: 100vh;
+  overflow: hidden;
   background-color: #000;
   color: #fff
+}
+
+.layout-main-container {
+  padding: 32px 24px;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+
+.card {
+  margin: 16px;
 }
