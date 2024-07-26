@@ -1,6 +1,11 @@
+"use client";
+
+import CatalogComponent from "@/components/catalog.component";
 
 export default function Home() {
   return (
-    <h1>Banana</h1>
+    <div>
+      <CatalogComponent />
+    </div>
   );
 }
