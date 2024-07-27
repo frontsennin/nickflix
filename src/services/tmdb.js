@@ -37,6 +37,33 @@ const discoverTv = async () => {
   return response.data;
 };
 
-export { auth, discoverMovies, discoverTv, getTvGenres, getMovieGenres };
+const searchByTerm = async (searchValue) => {
+  const response = await api.get(
+    `/3/search/multi?query=${searchValue}`,
+    options
+  );
+  return response.data;
+};
+
+const getTvTrailers = async (id) => {
+  const response = await api.get(`/3/tv/${id}/videos`, options);
+  return response.data;
+};
+
+const getMovieTrailers = async (id) => {
+  const response = await api.get(`/3/movie/${id}/videos`, options);
+  return response.data;
+};
+
+export {
+  auth,
+  discoverMovies,
+  discoverTv,
+  getTvGenres,
+  getMovieGenres,
+  searchByTerm,
+  getTvTrailers,
+  getMovieTrailers,
+};
 
 export default api;

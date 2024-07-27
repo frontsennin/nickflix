@@ -29,13 +29,13 @@ export default function Carousel({ constentList, genreList, title }) {
     <div className="carousel-sect">
       <h1 className="title">{title}</h1>
       <div
-        className="arrow-section arrow-left"
+        className="arrow-section arrow-left is-desktop"
         onClick={() => changeScrollPosition("left")}
       >
         <FontAwesomeIcon icon={faChevronLeft} />
       </div>
       <div
-        className="arrow-section arrow-right"
+        className="arrow-section arrow-right is-desktop"
         onClick={() => changeScrollPosition("right")}
       >
         <FontAwesomeIcon icon={faChevronRight} />
@@ -51,6 +51,7 @@ export default function Carousel({ constentList, genreList, title }) {
                 overview,
                 original_language,
                 name,
+                original_title,
                 adult,
                 genre_ids,
               },
@@ -64,7 +65,7 @@ export default function Carousel({ constentList, genreList, title }) {
                 isAdult={adult}
                 language={original_language}
                 overview={overview}
-                title={name}
+                title={name || original_title}
                 genreIds={genre_ids}
               />
             )

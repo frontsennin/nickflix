@@ -6,7 +6,12 @@ const nextConfig = {
     TMDB_TOKEN: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZTZhNGY4ZGEzMzJmMjU4ZGMzMGNhNjcwM2JhODcxMyIsIm5iZiI6MTcyMTk0ODc1MS45NTY4NzEsInN1YiI6IjY2YTJkOGI1ZWJiYmE4NzM3NmNhN2ZjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2J_WqjeFCC8HdbpscH1wvDgYk3L7UYJL4EEE43ZqJSU",
   },
   images: {
-    domains: ['image.tmdb.org'], // Add TMDB's domain here
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org'
+      }
+    ],
   },
 };
 
