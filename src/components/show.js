@@ -1,5 +1,6 @@
 "use client";
 
+import ReactPlayer from "react-player";
 import ShowBox from "./show-box";
 
 export default function Show({

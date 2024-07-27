@@ -138,3 +138,25 @@
     width: 100%;
     height: 30vh;
 }
+
+.play-sect {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .play-icon {
+            color: #FFF;
+            
+        }
+    }
+}
+
+.play-icon {
+    color: #810d1be0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    
+}
