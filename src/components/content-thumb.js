@@ -61,8 +61,8 @@ export default function ContentThumb({
           <Image
             src={`https://image.tmdb.org/t/p/w500${image}`}
             alt={`${title} image`}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
           {hovered && (
             <div className="media-content thumb-image-sect-overlay-text">

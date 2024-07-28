@@ -10,7 +10,7 @@ export function  Providers({ children }) {
     <Provider store={store}>
       <div className="layout-main-container">
         <div className="columns">
-          <div className="column is-2">
+          <div className="column is-3">
             <Link href="/">
               <h1 className="title is-1 main-title">NICKFLIX</h1>
             </Link>
